@@ -161,7 +161,7 @@ def main():
         df = pd.DataFrame(result, columns=[desc[0] for desc in mycursor.description])
         st.dataframe(df)
         
-        st.subheader("junção entre as tabelas editora e comics, agrupando os resultados por editoraID e média de preço por cada editora")
+        st.subheader("Junção entre as tabelas editora e comics, agrupando os resultados por editoraID e média de preço por cada editora")
         # Executa a query para obter o número total de quadrinhos e a média de preço por editora
         mycursor.execute("""
             SELECT editora.nomeEditora, COUNT(comics.tituloComic) AS NumeroQuadrinhos, AVG(comics.Price) AS MediaPreco
@@ -496,5 +496,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    
