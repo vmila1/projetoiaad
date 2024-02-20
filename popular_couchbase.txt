@@ -1,0 +1,32 @@
+#populando bucket regioes
+
+INSERT INTO `regioes` (KEY, VALUE)
+VALUES
+("R1", {"nomeRegiao": "Vale S.Francico", "estadoRegiao": "Pernambuco"}),
+("R2", {"nomeRegiao": "Zona da Mata", "estadoRegiao": "Pernambuco"}),
+("R3", {"nomeRegiao": "Garibaldi", "estadoRegiao": "Rio Grande do Sul"}),
+("R4", {"nomeRegiao": "Gramado", "estadoRegiao": "Rio Grande do Sul"});
+
+
+#populando bucket vinicola
+
+INSERT INTO `vinicola` (KEY, VALUE) 
+VALUES
+("V1", {"nomeVinicola": "A1", "foneVinicola": 1234, "regiaoID": "R1"}),
+("V2", {"nomeVinicola": "A2", "foneVinicola": 5234, "regiaoID": "R1"}),
+("V3", {"nomeVinicola": "A3", "foneVinicola": 6234, "regiaoID": "R2"}),
+("V4", {"nomeVinicola": "A4", "foneVinicola": 7234, "regiaoID": "R2"}),
+("V5", {"nomeVinicola": "A5", "foneVinicola": 8234, "regiaoID": "R3"});
+
+
+#populando bucket vinho
+
+INSERT INTO `vinho` (KEY, VALUE) VALUES
+("10", {"nomeVinho": "V1", "tipovinho": "tinto", "precoVinho": 100.00, "vinicolalD": 1}),
+("20", {"nomeVinho": "V2", "tipovinho": "branco", "precoVinho": 200.00, "vinicolalD": 1}),
+("30", {"nomeVinho": "V3", "tipovinho": "rose", "precoVinho": 300.00, "vinicolalD": 1}),
+("40", {"nomeVinho": "V4", "tipovinho": "rose", "precoVinho": 350.00, "vinicolalD": 2}),
+("50", {"nomeVinho": "V5", "tipovinho": "branco", "precoVinho": 250.00, "vinicolalD": 2}),
+("60", {"nomeVinho": "V6", "tipovinho": "tinto", "precoVinho": 150.00, "vinicolalD": 2}),
+("70", {"nomeVinho": "V7", "tipovinho": "tinto", "precoVinho": 397.00, "vinicolalD": 3}),
+("80", {"nomeVinho": "V8", "tipovinho": "branco", "precoVinho": 333.00, "vinicolalD": 3});
